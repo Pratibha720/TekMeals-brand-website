@@ -1,0 +1,27 @@
+name: tekmeal_app
+description: "A restaurant meal ordering system called TekMeals."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/splash_bg.png
+    - assets/images/logo.png
+    - assets/images/background_food.png
+    - assets/images/centered_dish.png
