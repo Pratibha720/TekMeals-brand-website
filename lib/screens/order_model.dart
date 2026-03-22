@@ -1,15 +1,14 @@
-import 'package:flutter/material.dart';
-
-enum OrderStatus { placed, preparing, ready, received }
+enum OrderStatus { placed, preparing, outForDelivery, delivered }
 
 class OrderModel {
   final String orderId;
-  final String mealName;
-  final String customization;
+  String mealName;        // Remove 'final'
+  String customization;   // Remove 'final'
   final String category;
   final String time;
-  final String price;
+  String price;           // Remove 'final'
   final OrderStatus status;
+  final DateTime placedAt;
 
   OrderModel({
     required this.orderId,
@@ -19,5 +18,5 @@ class OrderModel {
     required this.time,
     required this.price,
     required this.status,
-  });
+  }) : placedAt = DateTime.now();
 }
